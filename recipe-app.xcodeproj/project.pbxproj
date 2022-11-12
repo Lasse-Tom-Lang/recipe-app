@@ -14,6 +14,7 @@
 		721651A62910524B0097DD40 /* recipe_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721651A52910524B0097DD40 /* recipe_appTests.swift */; };
 		721651B02910524B0097DD40 /* recipe_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721651AF2910524B0097DD40 /* recipe_appUITests.swift */; };
 		721651B22910524B0097DD40 /* recipe_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721651B12910524B0097DD40 /* recipe_appUITestsLaunchTests.swift */; };
+		72C9A030291FDE0800A5D2F1 /* IngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9A02F291FDE0800A5D2F1 /* IngredientsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		721651AF2910524B0097DD40 /* recipe_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe_appUITests.swift; sourceTree = "<group>"; };
 		721651B12910524B0097DD40 /* recipe_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipe_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7246DB0E291120300053612C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		72C9A02F291FDE0800A5D2F1 /* IngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				721651942910524A0097DD40 /* recipe_appApp.swift */,
+				72C9A02F291FDE0800A5D2F1 /* IngredientsList.swift */,
 				721651962910524A0097DD40 /* ContentView.swift */,
 				721651982910524B0097DD40 /* Assets.xcassets */,
 				7216519A2910524B0097DD40 /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72C9A030291FDE0800A5D2F1 /* IngredientsList.swift in Sources */,
 				721651972910524A0097DD40 /* ContentView.swift in Sources */,
 				721651952910524A0097DD40 /* recipe_appApp.swift in Sources */,
 			);

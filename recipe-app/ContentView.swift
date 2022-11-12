@@ -9,19 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack() {
-            ZStack(alignment: .bottomLeading) {
-                Image("testImage")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Text("Name")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.white)
-                    .padding()
+        NavigationView {
+            VStack(alignment: .leading) {
+                ZStack(alignment: .bottomLeading) {
+                    Image("testImage")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Text("Name")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .fontWeight(.bold)
+                }
+                NavigationLink(
+                    destination:
+                        IngredientsList(Recipe: "A"),
+                    label: {
+                        Label(
+                            "Ingredients",
+                            systemImage: "carrot"
+                        )
+                    }
+                )
+                .padding()
+                Spacer()
             }
-            Spacer()
+            .ignoresSafeArea()
         }
-        .ignoresSafeArea()
     }
 }
 
