@@ -23,7 +23,7 @@ struct ContentView: View {
                 }
                 NavigationLink(
                     destination:
-                        IngredientsList(Recipe: "A"),
+                        IngredientsList(Recipe: Recipe(name: "test", Ingredients: [Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl")])),
                     label: {
                         Label(
                             "Ingredients",
