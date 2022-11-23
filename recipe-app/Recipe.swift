@@ -10,6 +10,7 @@ import Foundation
 struct Recipe {
     var name: String
     var Ingredients: [Ingredient]
+    var description: String
 }
 
 struct Ingredient {

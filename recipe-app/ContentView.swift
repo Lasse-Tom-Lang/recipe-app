@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let recipe: Recipe
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -15,7 +16,7 @@ struct ContentView: View {
                     Image("testImage")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    Text("Name")
+                    Text(recipe.name)
                         .font(.largeTitle)
                         .foregroundColor(Color.white)
                         .padding()
@@ -23,7 +24,7 @@ struct ContentView: View {
                 }
                 NavigationLink(
                     destination:
-                        IngredientsList(Recipe: Recipe(name: "test", Ingredients: [Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl")])),
+                        IngredientsList(recipe: recipe),
                     label: {
                         Label(
                             "Ingredients",
@@ -31,7 +32,10 @@ struct ContentView: View {
                         )
                     }
                 )
-                .padding()
+                .padding([.top, .leading])
+                Text(recipe.description)
+                    .padding(.horizontal)
+                    .padding(.top, 5.0)
                 Spacer()
             }
             .ignoresSafeArea()
@@ -41,6 +45,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(recipe: Recipe(name: "test", Ingredients: [Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"))
     }
 }

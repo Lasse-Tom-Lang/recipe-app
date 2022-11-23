@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct IngredientsList: View {
-    var Recipe: Recipe
+    var recipe: Recipe
     
     var body: some View {
         NavigationStack {
-            List(0..<Recipe.Ingredients.count) { a in
+            List(0..<recipe.Ingredients.count) { a in
                 Text("Hi")
             }
-            .navigationTitle("Ingredients for " + Recipe.name)
+            .navigationTitle("Ingredients for " + recipe.name)
         }
     }
 }
 
 struct IngredientsList_Previews: PreviewProvider {
     static var previews: some View {
-        IngredientsList(Recipe: Recipe(name: "default", Ingredients: [Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl")]))
+        IngredientsList(recipe: Recipe(name: "default", Ingredients: [Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"))
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct recipe_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(recipe: Recipe(name: "test", Ingredients: [Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl"), Ingredient(name: "TEst", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"))
         }
     }
 }
