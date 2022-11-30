@@ -13,7 +13,8 @@ struct Recipe {
     var description: String
 }
 
-struct Ingredient {
+struct Ingredient: Identifiable {
+    var id: Int
     var name: String
     var count: Int
     var unit: String
