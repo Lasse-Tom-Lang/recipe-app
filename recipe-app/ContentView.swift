@@ -45,6 +45,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(recipe: Recipe(name: "Cake", Ingredients: [Ingredient(id: 0, name: "Carott", count: 1, unit: "tl"), Ingredient(id: 1, name: "Apple", count: 1, unit: "tl"), Ingredient(id: 2, name: "Egg", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"))
+        ContentView(recipe: Recipe(name: "Cake", Ingredients: [Ingredient(id: 0, name: "Carott", count: 1, unit: "tl"), Ingredient(id: 1, name: "Apple", count: 1, unit: "tl"), Ingredient(id: 2, name: "Egg", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut", PersonCount: 4))
     }
 }

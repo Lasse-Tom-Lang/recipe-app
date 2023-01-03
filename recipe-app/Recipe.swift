@@ -11,6 +11,7 @@ struct Recipe {
     var name: String
     var Ingredients: [Ingredient]
     var description: String
+    var PersonCount: Int
 }
 
 struct Ingredient: Identifiable {
