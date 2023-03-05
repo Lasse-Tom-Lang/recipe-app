@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RecipePreview: View {
     let recipe: Recipe
     var body: some View {
         NavigationView {
@@ -37,14 +37,25 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .padding(.top, 5.0)
                 Spacer()
+                HStack() {
+                    Spacer()
+                    Button("Start cooking") {
+                        
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.blue)
+                    .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                }
+                .padding(.bottom)
             }
             .ignoresSafeArea()
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RecipePreview_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(recipe: Recipe(name: "Cake", Ingredients: [Ingredient(id: 0, name: "Carott", count: 1, unit: "tl"), Ingredient(id: 1, name: "Apple", count: 1, unit: "tl"), Ingredient(id: 2, name: "Egg", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut", PersonCount: 4))
+        RecipePreview(recipe: Recipe(name: "Cake", Ingredients: [Ingredient(id: 0, name: "Carott", count: 1, unit: "tl"), Ingredient(id: 1, name: "Apple", count: 1, unit: "tl"), Ingredient(id: 2, name: "Egg", count: 1, unit: "tl")], description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut", PersonCount: 4))
     }
 }
