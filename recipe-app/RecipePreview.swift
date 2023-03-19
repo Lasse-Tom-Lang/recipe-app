@@ -39,9 +39,16 @@ struct RecipePreview: View {
                 Spacer()
                 HStack() {
                     Spacer()
-                    Button("Start cooking") {
-                        
-                    }
+                    NavigationLink(
+                        destination:
+                            CookingView(recipe: recipe),
+                        label: {
+                            Label(
+                                "Start cooking",
+                                systemImage: "frying.pan"
+                            )
+                        }
+                    )
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
